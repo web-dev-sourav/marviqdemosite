@@ -3,254 +3,506 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MarviQ — Crafted for What Matters. A visual ecommerce concept.">
-<title>MarviQ — Crafted for What Matters</title>
+<meta name="description" content="MarviQ brand identity and visual direction — Crafted for What Matters.">
+<title>MarviQ — Brand Identity & Visual Direction</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
- --forest:#294137;--ivory:#F1EDE3;--carbon:#20221F;--cognac:#A66F4F;
- --stone:#A59C8E;--brass:#9B8055;--paper:#FAF8F2;--white:#fff;
- --muted:#77766e;--line:rgba(32,34,31,.14);
- --display:'Cormorant Garamond',Georgia,serif;
- --body:'DM Sans',Arial,sans-serif;--reading:'Libre Baskerville',Georgia,serif;
+  --forest:#294137; --ivory:#F1EDE3; --carbon:#20221F;
+  --cognac:#A66F4F; --stone:#A59C8E; --brass:#9B8055;
+  --muted:#77776e; --line:rgba(32,34,31,.14); --paper:#fbfaf6;
+  --font-display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-interface:"ITC New Baskerville", "Baskerville", "Times New Roman", serif;
 }
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--carbon);font-family:var(--body);line-height:1.55}
-button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}
-.announcement{background:var(--forest);color:var(--ivory);text-align:center;padding:9px 15px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}
-.site-header{position:sticky;top:0;z-index:20;background:rgba(250,248,242,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.header-inner{height:76px;max-width:1380px;padding:0 5.5%;margin:auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
-.nav-left,.nav-right{display:flex;align-items:center;gap:27px}.nav-right{justify-content:flex-end}
-.nav-link{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#56574f;transition:color .2s}.nav-link:hover{color:var(--cognac)}
-.wordmark{font-family:var(--display);font-size:31px;letter-spacing:.2em;font-weight:600;line-height:1}
-.header-icon{border:0;background:none;padding:7px;color:var(--carbon);display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
-.bag-count{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--forest);color:var(--ivory);font-size:9px}
-.menu-toggle{display:none;border:0;background:none;font-size:22px}
-.hero{min-height:650px;background:var(--forest);color:var(--ivory);position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
-.hero-copy{padding:100px 8vw 90px 11vw;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
-.eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;font-weight:600}
-.hero h1{font:500 clamp(64px,8vw,116px)/.82 var(--display);letter-spacing:-.035em;margin:32px 0 20px}
-.hero h1 span{font-style:italic;color:#d4c6ae}
-.hero-tagline{font:italic 22px var(--display);color:#e4d9c8;margin:0 0 22px}
-.hero-desc{max-width:390px;color:rgba(241,237,227,.75);font-size:12px;line-height:1.9}
-.rule{height:1px;width:54px;background:var(--brass);margin:30px 0}
-.button{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:15px 22px;border:1px solid transparent;background:var(--forest);color:var(--ivory);font-size:9px;letter-spacing:.17em;text-transform:uppercase;transition:.25s}
-.button:hover{background:#1d3028;transform:translateY(-2px)}
-.button.light{background:var(--ivory);color:var(--carbon)}.button.light:hover{background:#fff}
-.button.outline{background:transparent;border-color:rgba(241,237,227,.5);color:var(--ivory)}
-.hero .button{align-self:flex-start;margin-top:27px}
-.hero-visual{position:relative;min-height:650px;overflow:hidden}
-.hero-visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center;filter:saturate(.78)}
-.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--forest) 0%,rgba(41,65,55,.12) 32%,rgba(32,34,31,.08) 100%)}
-.hero-stamp{position:absolute;z-index:2;right:8%;bottom:8%;width:112px;height:112px;border:1px solid rgba(241,237,227,.7);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--ivory);font:italic 17px/1.05 var(--display)}
-.section{padding:105px 6%}.section-inner{max-width:1280px;margin:auto}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
-.section-kicker{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
-h2{font:500 clamp(42px,5vw,67px)/.98 var(--display);letter-spacing:-.025em;margin:0}
-.section-intro{max-width:340px;color:var(--muted);font-size:11px;line-height:1.9}
-.story{background:var(--ivory);display:grid;grid-template-columns:.9fr 1.1fr;gap:9%;align-items:center}
-.story-image{height:520px;position:relative;overflow:hidden;background:var(--stone)}
-.story-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}
-.story-image:after{content:"";position:absolute;inset:0;border:12px solid rgba(241,237,227,.15);pointer-events:none}
-.story-copy{max-width:570px}.story-copy h2{margin:20px 0 25px}.story-copy p{font:14px/2 var(--reading);color:#55564f}.story-sign{font:italic 23px var(--display);color:var(--forest);margin-top:30px}
-.products{background:var(--paper)}
-.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.product-card{min-width:0}
-.product-image{position:relative;background:#e9e4d9;aspect-ratio: .82;overflow:hidden}
-.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .6s;display:block}
-.product-card:hover .product-image img{transform:scale(1.045)}
-.product-label{position:absolute;top:13px;left:13px;background:var(--ivory);padding:6px 9px;font-size:8px;letter-spacing:.12em;text-transform:uppercase}
-.quick-add{position:absolute;bottom:12px;left:12px;right:12px;border:0;background:rgba(250,248,242,.94);padding:13px 10px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;opacity:0;transform:translateY(7px);transition:.25s}
-.product-card:hover .quick-add{opacity:1;transform:none}
-.product-meta{display:flex;justify-content:space-between;gap:10px;padding:14px 1px 0}
-.product-name{font:22px var(--display)}.product-price{font-size:11px;color:#55564f;padding-top:5px}
-.product-sub{font-size:9px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:3px}
-.center-cta{text-align:center;margin-top:48px}
-.editorial{background:var(--carbon);color:var(--ivory);padding:0;display:grid;grid-template-columns:1fr 1fr;min-height:560px}
-.editorial-image{min-height:560px;overflow:hidden}.editorial-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.72)}
-.editorial-copy{padding:90px 10%;display:flex;flex-direction:column;justify-content:center}
-.editorial-copy .section-kicker{color:#c2b8a7}.editorial-copy h2{margin:18px 0 22px}.editorial-copy p{font:14px/2 var(--reading);color:rgba(241,237,227,.72);max-width:420px}
-.values{background:var(--ivory);text-align:center}
-.values h2{max-width:680px;margin:16px auto 55px}
-.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(32,34,31,.15);border:1px solid rgba(32,34,31,.15);text-align:left}
-.value{background:var(--ivory);padding:32px}.value-no{font-size:9px;color:var(--brass);letter-spacing:.15em}.value h3{font:26px var(--display);margin:20px 0 8px}.value p{font-size:10px;line-height:1.8;color:var(--muted);max-width:260px}
-.newsletter{background:var(--forest);color:var(--ivory);text-align:center;padding:90px 20px}
-.newsletter h2{margin:16px 0}.newsletter p{font-size:11px;color:rgba(241,237,227,.7)}
-.news-form{display:flex;max-width:430px;margin:28px auto 0;border-bottom:1px solid rgba(241,237,227,.55)}
-.news-form input{flex:1;min-width:0;background:transparent;border:0;padding:14px 4px;color:var(--ivory);outline:none;font:11px var(--body)}
-.news-form input::placeholder{color:rgba(241,237,227,.55)}
-.news-form button{background:transparent;border:0;color:var(--ivory);font-size:9px;letter-spacing:.15em;text-transform:uppercase;padding:0 8px}
-.form-message{min-height:18px;font-size:10px;margin-top:12px;color:#e4d9c8}
-footer{background:var(--carbon);color:var(--ivory);padding:65px 6% 25px}
-.footer-top{max-width:1280px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:45px;padding-bottom:55px}
-.footer-brand .wordmark{font-size:34px}.footer-brand p{font:italic 18px var(--display);color:#c7bda9;margin-top:18px}
-.footer-col h4{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#b4a88f;margin:0 0 18px}
-.footer-col a{display:block;font-size:10px;color:rgba(241,237,227,.7);margin:10px 0}
-.footer-bottom{max-width:1280px;margin:auto;border-top:1px solid rgba(241,237,227,.16);padding-top:18px;display:flex;justify-content:space-between;gap:20px;font-size:8px;letter-spacing:.12em;color:rgba(241,237,227,.55);text-transform:uppercase}
-.drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.38);z-index:40;opacity:0;visibility:hidden;transition:.25s}
-.drawer{position:fixed;z-index:41;right:0;top:0;height:100%;width:min(410px,92vw);background:var(--paper);padding:28px;transform:translateX(100%);transition:.3s;display:flex;flex-direction:column}
-.drawer-open .drawer-backdrop{opacity:1;visibility:visible}.drawer-open .drawer{transform:none}
-.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}
-.drawer-head h3{font:27px var(--display);margin:0}.close-drawer{border:0;background:none;font-size:23px}
-.cart-items{padding:20px 0;flex:1;overflow:auto}.cart-item{display:flex;gap:14px;margin-bottom:18px}.cart-item img{width:75px;height:85px;object-fit:cover;background:var(--ivory)}.cart-item strong{font:19px var(--display);font-weight:500}.cart-item small{display:block;color:var(--muted);font-size:10px;margin-top:5px}.remove{border:0;background:none;padding:8px 0;color:var(--cognac);font-size:9px;text-transform:uppercase;letter-spacing:.1em}
-.cart-total{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;font-size:12px;margin-bottom:15px}.checkout-note{font-size:9px;color:var(--muted);text-align:center;margin-top:12px}
-.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:var(--carbon);color:var(--ivory);padding:12px 20px;font-size:10px;letter-spacing:.08em;opacity:0;pointer-events:none;transition:.25s;z-index:60}.toast.show{opacity:1;transform:translate(-50%,0)}
-@media(max-width:900px){.header-inner{padding:0 4%;grid-template-columns:1fr auto 1fr}.nav-left{gap:14px}.nav-link{font-size:9px}.hero-copy{padding-left:8vw}.product-grid{grid-template-columns:repeat(2,1fr);row-gap:35px}.footer-top{grid-template-columns:1.4fr 1fr 1fr}.footer-brand{grid-column:1/-1}}
-@media(max-width:650px){
- .announcement{font-size:8px}.header-inner{height:65px;display:flex;justify-content:space-between}.nav-left{display:none}.menu-toggle{display:block}.wordmark{font-size:27px}.nav-right .header-icon span.label{display:none}
- .hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:78px 8% 55px}.hero h1{font-size:78px}.hero-visual{min-height:370px}.hero-visual:after{background:linear-gradient(0deg,rgba(41,65,55,.3),transparent)}
- .hero-stamp{width:86px;height:86px;font-size:14px}.section{padding:72px 6%}.section-head{display:block}.section-intro{margin-top:18px}
- .story{grid-template-columns:1fr;gap:35px}.story-image{height:390px}.story-copy{padding:0 2%}.product-grid{gap:28px 12px}.product-name{font-size:19px}.product-price{font-size:10px}.quick-add{opacity:1;transform:none;padding:10px 5px;font-size:8px}
- .editorial{grid-template-columns:1fr}.editorial-image{min-height:360px;height:360px}.editorial-copy{padding:65px 8%}
- .value-grid{grid-template-columns:1fr}.value{padding:25px}.footer-top{grid-template-columns:1fr 1fr;gap:30px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--carbon);font-family:var(--font-interface);line-height:1.7;font-size:16px}
+a{color:inherit}
+.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+.eyebrow{font-size:.72rem;letter-spacing:.19em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+h1,h2,h3,.serif{font-family:var(--font-display);font-weight:500;line-height:1.04}
+h1,h2{letter-spacing:-.025em}
+h3{font-weight:600}
+.lead,.quote,.tagline,.footer-title{font-family:var(--font-display)}
+.navlinks,.eyebrow,.kicker,.pill,.hex,th,.hero-meta,.mock-button{font-family:var(--font-interface)}
+h1{font-size:clamp(3.6rem,10vw,8rem);letter-spacing:.06em;margin:.12em 0}
+h2{font-size:clamp(2rem,4vw,3.3rem);margin:0 0 18px}
+h3{font-size:1.45rem;margin:0 0 10px}
+p{margin:0 0 14px}
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+.hero{background:var(--forest);color:var(--ivory);min-height:680px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(241,237,227,.18);border-radius:50%;right:-100px;top:80px;box-shadow:0 0 0 55px rgba(241,237,227,.025),0 0 0 110px rgba(241,237,227,.02)}
+.hero .wrap{position:relative;z-index:1}
+.hero .eyebrow{color:#c5c9c0}
+.hero h1{margin:26px 0 8px}
+.tagline{font:italic clamp(1.2rem,2.5vw,1.8rem) var(--font-display);color:#e4dfd3}
+.hero-rule{width:72px;height:2px;background:var(--brass);margin:32px 0}
+.hero-note{max-width:540px;color:#d6d8d0;font-size:1rem}
+.hero-meta{margin-top:70px;display:flex;gap:34px;flex-wrap:wrap;color:#d6d8d0;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:10;background:rgba(251,250,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navinner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:20px}
+.brand-small{font-weight:700;letter-spacing:.16em}
+.navlinks{display:flex;gap:20px;overflow:auto;white-space:nowrap;font-size:.76rem;color:var(--muted)}
+.navlinks a{text-decoration:none}
+.intro{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px}
+.lead{font:1.35rem/1.55 Georgia,serif;max-width:760px}
+.kicker{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);padding:26px;border-radius:4px}
+.card p:last-child{margin-bottom:0}
+.quote{border-left:2px solid var(--brass);padding:8px 0 8px 24px;font:italic 1.5rem/1.4 Georgia,serif}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.value{background:var(--paper);padding:24px}
+.value strong{display:block;font:1.35rem Georgia,serif;margin-bottom:8px}
+.palette{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.swatch{border:1px solid var(--line);background:white}
+.swatch-color{height:150px}
+.swatch-info{padding:17px}
+.swatch-name{font:1.3rem Georgia,serif}
+.hex{font:700 .8rem Arial,sans-serif;letter-spacing:.08em;margin-top:5px}
+.role{font-size:.8rem;color:var(--muted);margin-top:8px}
+.pill{display:inline-block;padding:5px 9px;border:1px solid var(--line);border-radius:99px;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;margin-top:10px}
+.bar{height:25px;display:flex;overflow:hidden;border-radius:3px;margin:22px 0}
+.bar span{display:block}
+.legend{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 24px}
+.legend-row{display:flex;align-items:center;gap:12px;font-size:.88rem}
+.dot{width:24px;height:24px;border-radius:3px;border:1px solid var(--line);flex:none}
+table{width:100%;border-collapse:collapse;margin-top:20px;font-size:.9rem}
+th,td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.application{padding:0;overflow:hidden}
+.application .sample{height:190px;padding:25px;display:flex;align-items:center;justify-content:center}
+.application .copy{padding:22px}
+.mock-logo{font:700 2rem Georgia,serif;letter-spacing:.17em}
+.mock-button{display:inline-block;background:var(--forest);color:var(--ivory);padding:11px 18px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase}
+.type-sample{font:3rem Georgia,serif;line-height:1.1}
+.type-small{font-size:.92rem;line-height:1.7}
+.do-dont{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.do-dont .card{min-height:150px}
+.footer{background:var(--carbon);color:var(--ivory);padding:55px 0}
+.footer .eyebrow{color:#b7b8af}
+.footer-title{font:500 2.3rem var(--font-display);margin:14px 0}
+.note{font-size:.78rem;color:var(--muted)}
+@media(max-width:760px){
+  table{display:block;overflow-x:auto;white-space:normal;-webkit-overflow-scrolling:touch}
+  th,td{min-width:130px}
+ .wrap{width:min(100% - 30px,600px)}
+ section{padding:62px 0}
+ .hero{min-height:590px}
+ .intro{grid-template-columns:1fr;gap:18px}
+ .grid2,.grid3,.palette,.values,.do-dont{grid-template-columns:1fr}
+ .navlinks{gap:14px}
+ .swatch-color{height:120px}
+ .hero-meta{margin-top:48px}
+ .legend{grid-template-columns:1fr}
+}
+@media print{
+ nav{display:none}.hero{min-height:500px}section{break-inside:avoid;padding:45px 0}
+ body{background:white}.wrap{width:92%}
 }
 </style>
 </head>
 <body>
-<div class="announcement">Complimentary delivery across Bangladesh on selected orders · Crafted with intention</div>
-<header class="site-header">
- <div class="header-inner">
-  <button class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('collections').scrollIntoView({behavior:'smooth'})">☰</button>
-  <nav class="nav-left"><a class="nav-link" href="#collections">Shop</a><a class="nav-link" href="#story">Our story</a><a class="nav-link" href="#values">The MarviQ way</a></nav>
-  <a class="wordmark" href="#">MARVIQ</a>
-  <div class="nav-right"><a class="nav-link" href="#collections">Collections</a><button class="header-icon" onclick="openCart()" aria-label="Open shopping bag">Bag <span class="bag-count" id="bagCount">0</span></button></div>
- </div>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Brand identity &amp; visual direction</div>
+    <h1>MARVIQ</h1>
+    <div class="tagline">Crafted for What Matters.</div>
+    <div class="hero-rule"></div>
+    <p class="hero-note">A modern men's fashion and leather goods brand built around individuality, thoughtful design, and the freedom to choose what feels right.</p>
+    <div class="hero-meta"><span>Men's fashion</span><span>Leather essentials</span><span>Modern heritage</span></div>
+  </div>
 </header>
 
+<nav><div class="wrap navinner">
+  <div class="brand-small">MARVIQ</div>
+  <div class="navlinks">
+    <a href="#foundation">Foundation</a><a href="#story">Story</a><a href="#personality">Personality</a><a href="#palette">Color system</a><a href="#color-usage">Color usage</a><a href="#typography">Typography</a><a href="#application">Applications</a><a href="#summary">Summary</a>
+  </div>
+</div></nav>
+
 <main>
-<section class="hero">
- <div class="hero-copy">
-  <div class="eyebrow">Men's essentials · Made personal</div>
-  <h1>Crafted for<br><span>what matters.</span></h1>
-  <p class="hero-tagline">Your everyday, considered.</p>
-  <p class="hero-desc">Thoughtfully designed essentials for the way you live, the things you value, and the person you choose to be.</p>
-  <div class="rule"></div>
-  <a class="button light" href="#collections">Explore the collection <span>↗</span></a>
- </div>
- <div class="hero-visual">
-  <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1500&q=88" alt="Premium leather wallet in a warm, minimal setting">
-  <div class="hero-stamp">Made to<br>matter</div>
- </div>
-</section>
-
-<section class="section story" id="story">
- <div class="story-image"><img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=1100&q=85" alt="Craftsmanship and leather material detail"></div>
- <div class="story-copy">
-  <div class="section-kicker">A little about us · 01</div>
-  <h2>Different perspectives.<br>One shared belief.</h2>
-  <p>We believe what you carry should feel like you. Not defined by trends, expectations, or what everyone else chooses. MarviQ began with four friends, different points of view, and one shared belief: every man deserves the freedom to choose what truly fits him.</p>
-  <p>That belief shapes every detail — from the way a piece is considered to the way it becomes part of your everyday life.</p>
-  <div class="story-sign">MarviQ — Crafted for What Matters.</div>
- </div>
-</section>
-
-<section class="section products" id="collections">
- <div class="section-inner">
-  <div class="section-head">
-   <div><div class="section-kicker">The essentials · 02</div><h2>Made to go with you.</h2></div>
-   <p class="section-intro">Considered forms. Everyday function. A personal touch. Discover the pieces that make the everyday feel more like your own.</p>
-  </div>
-  <div class="product-grid">
-   <article class="product-card">
-    <div class="product-image"><img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=85" alt="Classic brown leather wallet"><span class="product-label">Everyday essential</span><button class="quick-add" onclick="addToCart('The Classic Wallet',1850,'https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=200&q=70')">Quick add +</button></div>
-    <div class="product-meta"><div><div class="product-name">The Classic Wallet</div><div class="product-sub">Saddle cognac · Bi-fold</div></div><div class="product-price">৳ 1,850</div></div>
-   </article>
-   <article class="product-card">
-    <div class="product-image"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85" alt="Minimal everyday carry bag"><span class="product-label">Everyday carry</span><button class="quick-add" onclick="addToCart('The Daily Carry',3200,'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=200&q=70')">Quick add +</button></div>
-    <div class="product-meta"><div><div class="product-name">The Daily Carry</div><div class="product-sub">Deep neutral · Utility</div></div><div class="product-price">৳ 3,200</div></div>
-   </article>
-   <article class="product-card">
-    <div class="product-image"><img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=800&q=85" alt="Refined casual bag"><span class="product-label">On the move</span><button class="quick-add" onclick="addToCart('The Weekender',4200,'https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=200&q=70')">Quick add +</button></div>
-    <div class="product-meta"><div><div class="product-name">The Weekender</div><div class="product-sub">Timeless form · Travel</div></div><div class="product-price">৳ 4,200</div></div>
-   </article>
-   <article class="product-card">
-    <div class="product-image"><img src="https://images.unsplash.com/photo-1624222247344-550fb8f6b5f0?auto=format&fit=crop&w=800&q=85" alt="Leather accessory detail"><span class="product-label">Finishing touch</span><button class="quick-add" onclick="addToCart('The Essential Belt',1450,'https://images.unsplash.com/photo-1624222247344-550fb8f6b5f0?auto=format&fit=crop&w=200&q=70')">Quick add +</button></div>
-    <div class="product-meta"><div><div class="product-name">The Essential Belt</div><div class="product-sub">Classic leather · Daily</div></div><div class="product-price">৳ 1,450</div></div>
-   </article>
-  </div>
-  <div class="center-cta"><a class="button" href="#newsletter">Discover MarviQ <span>↗</span></a></div>
- </div>
-</section>
-
-<section class="editorial">
- <div class="editorial-image"><img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=85" alt="Timeless men's accessories and understated styling"></div>
- <div class="editorial-copy">
-  <div class="section-kicker">The MarviQ point of view · 03</div>
-  <h2>Not made for everyone.<br><em>Made to feel like you.</em></h2>
-  <p>Individuality lives in the details. In the choices you make, the things you keep close, and the confidence to choose differently. We make essentials with that thought in mind.</p>
-  <a class="button outline" href="#values" style="align-self:flex-start;margin-top:24px">Discover our philosophy <span>↗</span></a>
- </div>
-</section>
-
-<section class="section values" id="values">
- <div class="section-inner">
-  <div class="section-kicker">What we stand for · 04</div>
-  <h2>Good design is felt<br>in the everyday.</h2>
-  <div class="value-grid">
-   <div class="value"><span class="value-no">01 / INDIVIDUALITY</span><h3>Choose your own way.</h3><p>Your essentials should reflect your identity, not someone else's idea of it.</p></div>
-   <div class="value"><span class="value-no">02 / THOUGHTFULNESS</span><h3>Every detail matters.</h3><p>Purposeful design and considered details make everyday pieces worth keeping.</p></div>
-   <div class="value"><span class="value-no">03 / TRUST</span><h3>Honesty comes first.</h3><p>Clear expectations, dependable quality, and respect for the people who choose us.</p></div>
+<section id="foundation">
+ <div class="wrap intro">
+  <div><div class="kicker">01 / Brand foundation</div><h2>Made personal.<br>Made to matter.</h2></div>
+  <div>
+   <p class="lead">MarviQ stands for individuality, freedom, and the confidence to be yourself. We create men's essentials and accessories that connect with who you are, how you live, and what you stand for—because the things you carry should feel personal, not just look good.</p>
+   <p style="margin-top:24px"><strong>Brand category:</strong> Men's Fashion &amp; Leather Goods<br><strong>Primary focus:</strong> Men's leather essentials and accessories</p>
+   <div class="quote" style="margin-top:30px">MarviQ — Crafted for What Matters.</div>
   </div>
  </div>
 </section>
 
-<section class="newsletter" id="newsletter">
- <div class="section-kicker" style="color:#c8b99e">Stay in the know</div>
- <h2>Something worth carrying.</h2>
- <p>Be the first to discover new pieces, stories, and thoughtful essentials.</p>
- <form class="news-form" id="newsForm"><input id="emailInput" type="email" placeholder="Your email address" required><button type="submit">Sign me up ↗</button></form>
- <div class="form-message" id="formMessage" aria-live="polite"></div>
+<section id="story">
+ <div class="wrap">
+  <div class="kicker">02 / The story behind MarviQ</div><h2>Different perspectives.<br>One shared belief.</h2>
+  <div class="grid2">
+   <div><p class="lead">Born from a moment of inspiration, four friends from a small city came together with different ideas, different perspectives, and one shared belief: every man deserves the freedom to choose what truly fits him.</p></div>
+   <div><p>We believe individuality should never be limited by what everyone else wears or carries. That belief brought our different visions into one, giving life to MarviQ—a brand built to redefine men's essentials through personal choice, individual style, and purpose.</p><p><strong>MarviQ — Crafted for What Matters.</strong></p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap grid2">
+  <div class="card">
+   <div class="kicker">03 / Brand vision</div><h2>Where we're going.</h2>
+   <p>To build MarviQ into a distinctive men's fashion brand, known for exceptional leather craftsmanship and thoughtfully designed essentials. Our vision is to create pieces for different men, lifestyles, and identities—giving every man the freedom to find what truly feels like him.</p>
+  </div>
+  <div class="card">
+   <div class="kicker">04 / Brand mission</div><h2>What we do.</h2>
+   <p>Our mission is to create men's essentials that set a standard customers can feel for themselves. We strive to make every product so thoughtfully designed and satisfying to use that our customers don't just like what they bought—they believe they've found the best.</p>
+  </div>
+  <div class="card" style="grid-column:1/-1">
+   <div class="kicker">05 / Brand promise</div><h2>Your trust comes first.</h2>
+   <p class="lead">At MarviQ, you come first. Every product we offer is made with your expectations in mind, and what you see is what we strive to deliver. We believe your trust is earned through honesty, your expectations deserve respect, and your satisfaction is our responsibility.</p>
+  </div>
+ </div>
+</section>
+
+<section id="personality">
+ <div class="wrap">
+  <div class="kicker">06 / Brand personality</div><h2>Strong character.<br>Quiet confidence.</h2>
+  <p class="lead" style="max-width:760px;margin-bottom:30px">The MarviQ identity should feel premium and intentional without appearing inaccessible, overly decorative, or unnecessarily luxurious.</p>
+  <div class="values">
+   <div class="value"><strong>Bold</strong>Confident, distinctive, and memorable.</div>
+   <div class="value"><strong>Refined</strong>Considered, sophisticated, and well-balanced.</div>
+   <div class="value"><strong>Masculine</strong>Strong without feeling aggressive or overly rugged.</div>
+   <div class="value"><strong>Individual</strong>Expressive of personal style rather than mass-market uniformity.</div>
+   <div class="value"><strong>Timeless</strong>Designed to remain relevant beyond short-lived trends.</div>
+   <div class="value"><strong>Trustworthy</strong>Honest, consistent, and customer-focused.</div>
+  </div>
+ </div>
+</section>
+
+<section id="direction">
+ <div class="wrap">
+  <div class="kicker">07 / Creative direction</div><h2>Modern heritage.<br>Contemporary masculinity.</h2>
+  <div class="grid2">
+   <div><p class="lead">MarviQ should have the soul of traditional craftsmanship and the confidence of individual expression.</p></div>
+   <div><p>The visual identity combines understated sophistication, strong typography, natural material references, balanced light and dark tones, and clean layouts with intentional negative space. It should feel distinctive and ownable—not like a copy of an existing luxury or leather goods brand.</p></div>
+  </div>
+  <div class="grid3" style="margin-top:28px">
+   <div class="card"><h3>Keep</h3><p>Clear hierarchy, tactile materials, natural light, considered spacing, and purposeful details.</p></div>
+   <div class="card"><h3>Avoid</h3><p>Generic crowns, shields, excessive ornamentation, aggressive masculine clichés, and overused luxury tropes.</p></div>
+   <div class="card"><h3>Build for</h3><p>Leather goods today, with enough flexibility for bags, belts, travel essentials, and broader men's fashion tomorrow.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="palette">
+ <div class="wrap">
+  <div class="kicker">08 / Strategic color system</div><h2>The MarviQ palette.</h2>
+  <div class="card" style="margin:26px 0 34px;background:#f4f1e9">
+   <div class="kicker">The strategic direction</div>
+   <h3 style="font-size:1.8rem">Modern Heritage with Contemporary Masculinity</h3>
+   <p class="lead" style="font-size:1.18rem">MarviQ should feel grounded in the lasting appeal of traditional craftsmanship, while expressing the confidence, freedom, and individuality of the modern man.</p>
+   <p>We do not recommend building MarviQ around the typical black-and-brown luxury leather aesthetic alone. Although that combination can look attractive, it is widely used across men's leather brands and can make a new identity feel familiar before it has a chance to become distinctive.</p>
+   <p>MarviQ has a more personal philosophy. It is about individuality, personal choice, freedom, and finding what genuinely represents you. The visual identity should communicate premium craftsmanship without making the brand feel exclusive, intimidating, old-fashioned, or limited to one narrow idea of masculinity.</p>
+   <p>For that reason, the palette should balance a recognizable signature color with natural warmth, refined neutrals, and purposeful accents. It should feel confident but welcoming, premium but not pretentious, and connected to leather without being defined by leather alone.</p>
+   <h3 style="margin-top:28px">Five characteristics that guide the palette</h3>
+   <div class="grid2" style="margin-top:18px">
+    <div class="card"><h3>01 / Confidence</h3><p>Colors should feel strong, grounded, and recognizable. Deep, composed tones establish presence and help MarviQ communicate assurance without relying on aggressive or overly rugged visual cues.</p></div>
+    <div class="card"><h3>02 / Individuality</h3><p>The identity needs a distinctive signature color that helps MarviQ stand apart from the familiar black-and-brown category palette. This color should be ownable, memorable, and flexible enough to grow with the brand.</p></div>
+    <div class="card"><h3>03 / Craftsmanship</h3><p>Natural warmth should connect the visual identity to leather, material quality, and considered making. Earthy leather-inspired tones bring tactility and authenticity to campaigns, product storytelling, and packaging.</p></div>
+    <div class="card"><h3>04 / Refinement</h3><p>The palette should communicate understated sophistication through restraint, balance, and thoughtful contrast—not excessive metallics, decorative effects, or signals of inaccessible luxury.</p></div>
+    <div class="card" style="grid-column:1/-1"><h3>05 / Timelessness</h3><p>Colors should remain relevant beyond short-lived trends and support the brand as it expands into new categories. The system must work for leather essentials today and for bags, belts, travel pieces, and broader men's fashion in the future.</p></div>
+   </div>
+   <p style="margin-top:22px"><strong>Strategic principle:</strong> MarviQ's colors should not simply make products look premium. They should express the brand's point of view—individual, confident, refined, and made for what matters.</p>
+  </div>
+  <p class="lead" style="max-width:800px">The resulting palette is a Modern Heritage system: grounded, distinctive, warm, and quietly confident. Deep Forest provides a recognizable signature; Natural Ivory creates openness; Cognac connects the identity to leather and craft.</p>
+  <div class="palette" style="margin-top:34px">
+   <div class="swatch"><div class="swatch-color" style="background:#294137"></div><div class="swatch-info"><div class="swatch-name">Deep Forest</div><div class="hex">#294137</div><div class="role">Signature brand color · Individuality, confidence, stability, understated sophistication.</div><span class="pill">Signature</span></div></div>
+   <div class="swatch"><div class="swatch-color" style="background:#F1EDE3"></div><div class="swatch-info"><div class="swatch-name">Natural Ivory</div><div class="hex">#F1EDE3</div><div class="role">Primary light · Openness, warmth, simplicity, and visual breathing room.</div><span class="pill">Foundation</span></div></div>
+   <div class="swatch"><div class="swatch-color" style="background:#20221F"></div><div class="swatch-info"><div class="swatch-name">Carbon Black</div><div class="hex">#20221F</div><div class="role">Primary dark · Authority, strength, clarity, and professional contrast.</div><span class="pill">Typography</span></div></div>
+   <div class="swatch"><div class="swatch-color" style="background:#A66F4F"></div><div class="swatch-info"><div class="swatch-name">Saddle Cognac</div><div class="hex">#A66F4F</div><div class="role">Leather accent · Craftsmanship, authenticity, warmth, and material quality.</div><span class="pill">Material accent</span></div></div>
+   <div class="swatch"><div class="swatch-color" style="background:#A59C8E"></div><div class="swatch-info"><div class="swatch-name">Weathered Stone</div><div class="hex">#A59C8E</div><div class="role">Supporting neutral · Balance, subtlety, versatility, and calm.</div><span class="pill">Supporting</span></div></div>
+   <div class="swatch"><div class="swatch-color" style="background:#9B8055"></div><div class="swatch-info"><div class="swatch-name">Antique Brass</div><div class="hex">#9B8055</div><div class="role">Restrained accent · Precision, heritage, detail, and premium finishing.</div><span class="pill">Fine detail</span></div></div>
+  </div>
+  <h3 style="margin-top:55px">Suggested color proportions</h3>
+  <p class="note">A starting guide for the overall visual system—not a rigid rule for every asset.</p>
+  <div class="bar" aria-label="Color proportion bar">
+   <span style="width:40%;background:#F1EDE3"></span><span style="width:25%;background:#294137"></span><span style="width:15%;background:#20221F"></span><span style="width:10%;background:#A66F4F"></span><span style="width:7%;background:#A59C8E"></span><span style="width:3%;background:#9B8055"></span>
+  </div>
+  <div class="legend">
+   <div class="legend-row"><i class="dot" style="background:#F1EDE3"></i><span><strong>40%</strong> Natural Ivory — main backgrounds</span></div>
+   <div class="legend-row"><i class="dot" style="background:#294137"></i><span><strong>25%</strong> Deep Forest — signature presence</span></div>
+   <div class="legend-row"><i class="dot" style="background:#20221F"></i><span><strong>15%</strong> Carbon Black — typography and contrast</span></div>
+   <div class="legend-row"><i class="dot" style="background:#A66F4F"></i><span><strong>10%</strong> Saddle Cognac — leather accents</span></div>
+   <div class="legend-row"><i class="dot" style="background:#A59C8E"></i><span><strong>7%</strong> Weathered Stone — supporting elements</span></div>
+   <div class="legend-row"><i class="dot" style="background:#9B8055"></i><span><strong>3%</strong> Antique Brass — fine details</span></div>
+  </div>
+  <div class="card" style="margin-top:28px;background:#f4f1e9">
+   <h3>Why this combination?</h3>
+   <p>Black and brown alone can make a leather brand feel familiar but generic. Deep Forest introduces a more ownable signature while retaining a natural, heritage-inspired character. Ivory keeps the brand approachable and editorial; Cognac makes the connection to leather unmistakable. Together, the palette feels masculine without aggression and premium without pretension.</p>
+  </div>
+ </div>
+</section>
+
+
+<section id="color-usage">
+ <div class="wrap">
+  <div class="kicker">09 / Website color application</div>
+  <h2>Every color has a job.</h2>
+  <p class="lead" style="max-width:820px;margin:18px 0 34px">The palette should work as a system, not as six colors competing for attention. Use each color according to its role in the interface so the website feels recognizable, easy to navigate, and visually consistent.</p>
+  <div class="card" style="margin-bottom:26px">
+   <h3>Recommended website color roles</h3>
+   <table>
+    <thead><tr><th>Color</th><th>Primary purpose</th><th>Where to use it</th><th>Why it belongs there</th></tr></thead>
+    <tbody>
+     <tr><td><strong>Deep Forest</strong><br><span class="hex">#294137</span></td><td>Primary brand surface and action color</td><td>Hero backgrounds, announcement bar, primary CTA buttons, selected navigation states, footer backgrounds, promotional panels.</td><td>Creates a distinctive signature and communicates confidence, stability, and understated sophistication. It is the main recognizable brand color.</td></tr>
+     <tr><td><strong>Natural Ivory</strong><br><span class="hex">#F1EDE3</span></td><td>Primary light background</td><td>Main page backgrounds, product detail areas, editorial sections, cards on dark surfaces, packaging and negative space.</td><td>Softens the interface compared with stark white and gives product photography and typography room to breathe.</td></tr>
+     <tr><td><strong>Carbon Black</strong><br><span class="hex">#20221F</span></td><td>Primary text and high-contrast neutral</td><td>Body copy, product names, prices, headings when not using the display accent, icons, borders and footer text on light surfaces.</td><td>Provides strong legibility and a grounded, professional contrast without the harshness of pure black.</td></tr>
+     <tr><td><strong>Saddle Cognac</strong><br><span class="hex">#A66F4F</span></td><td>Leather and material accent</td><td>Small decorative rules, product category markers, leather-related campaign details, image overlays used sparingly, selected badges and material callouts.</td><td>Connects the digital identity to leather, warmth, material character and craftsmanship. It should support the product story rather than become a second primary brand color.</td></tr>
+     <tr><td><strong>Weathered Stone</strong><br><span class="hex">#A59C8E</span></td><td>Supporting neutral</td><td>Secondary panels, subtle dividers, inactive UI surfaces, image backdrops, muted decorative elements and neutral product filters.</td><td>Adds tonal depth and a calm transition between Ivory, Cognac and Carbon without introducing visual noise.</td></tr>
+     <tr><td><strong>Antique Brass</strong><br><span class="hex">#9B8055</span></td><td>Fine-detail accent</td><td>Thin borders, small ornamental lines, tiny icons, premium packaging details, separators and limited highlight treatments.</td><td>Suggests heritage and considered finishing. Its role is precision and restraint, not large blocks or long text.</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="grid2">
+   <div class="card">
+    <h3>Suggested interface combinations</h3>
+    <div style="display:grid;gap:12px;margin-top:18px">
+     <div style="background:#294137;color:#F1EDE3;padding:18px;border-radius:3px"><strong style="font:600 1.25rem var(--font-display)">Primary CTA</strong><br><span style="font-size:.82rem">Ivory text on Deep Forest</span><br><span style="font-size:.7rem;opacity:.8">#F1EDE3 on #294137</span></div>
+     <div style="background:#F1EDE3;color:#20221F;padding:18px;border:1px solid #ddd5c7;border-radius:3px"><strong style="font:600 1.25rem var(--font-display)">Product information</strong><br><span style="font-size:.82rem">Carbon text on Natural Ivory</span><br><span style="font-size:.7rem;color:#555">#20221F on #F1EDE3</span></div>
+     <div style="background:#20221F;color:#F1EDE3;padding:18px;border-radius:3px"><strong style="font:600 1.25rem var(--font-display)">Footer / dark panel</strong><br><span style="font-size:.82rem">Ivory text on Carbon Black</span><br><span style="font-size:.7rem;opacity:.8">#F1EDE3 on #20221F</span></div>
+    </div>
+   </div>
+   <div class="card">
+    <h3>How not to use the palette</h3>
+    <ul style="padding-left:19px;margin:14px 0 0">
+     <li style="margin-bottom:10px">Do not use all six colors with equal visual weight. Deep Forest, Ivory and Carbon should do most of the work.</li>
+     <li style="margin-bottom:10px">Do not use Saddle Cognac, Weathered Stone or Antique Brass for long paragraphs or small text on Ivory.</li>
+     <li style="margin-bottom:10px">Do not make every section Deep Forest. Alternate light and dark sections to preserve hierarchy and visual rhythm.</li>
+     <li style="margin-bottom:10px">Do not use Antique Brass as a primary button fill or primary text color.</li>
+     <li>Do not rely on color alone to communicate status, selection or errors; pair color with labels, icons or other visual cues.</li>
+    </ul>
+   </div>
+  </div>
+  <div class="card" style="margin-top:24px;background:#f4f1e9">
+   <h3>Contrast and accessibility note</h3>
+   <p>For normal website text, target a contrast ratio of at least 4.5:1; large text can use 3:1 under WCAG 2.1 Level AA. Deep Forest and Carbon Black are the preferred text colors on Natural Ivory. Ivory is the preferred text color on Deep Forest and Carbon Black. Saddle Cognac, Weathered Stone and Antique Brass are accent colors on light backgrounds—not safe defaults for small text.</p>
+   <p class="note" style="margin-top:10px">Contrast ratios calculated from the supplied HEX values: Deep Forest on Ivory ≈ 9.43:1; Carbon Black on Ivory ≈ 13.71:1; Saddle Cognac on Ivory ≈ 3.59:1; Weathered Stone on Ivory ≈ 2.32:1; Antique Brass on Ivory ≈ 3.20:1. Re-check final combinations and states in the production design.</p>
+  </div>
+ </div>
+</section>
+
+
+<section id="typography">
+ <div class="wrap">
+  <div class="kicker">10 / Website typography system</div>
+  <h2>Editorial character. Considered clarity.</h2>
+  <p class="lead" style="max-width:850px;margin:18px 0 32px">This typography system is for MarviQ's website interface and content—not the logo. It pairs Cormorant Garamond as the expressive primary display face with ITC New Baskerville as the secondary reading and interface face. Together they create a more unified, heritage-led editorial voice while preserving a clear distinction between brand expression and practical information.</p>
+  <div class="grid2">
+   <div class="card">
+    <div class="kicker">Primary typeface / Display and editorial</div>
+    <div style="font:500 clamp(2.8rem,6vw,4.8rem)/.92 var(--font-display);letter-spacing:-.035em;margin:8px 0 18px">Made for<br><em>what matters.</em></div>
+    <h3>Cormorant Garamond</h3>
+    <p><strong>Role:</strong> Primary display typeface. It is the most recognisable typographic expression of MarviQ's brand personality.</p>
+    <p><strong>Use for:</strong> Homepage hero headline, major section headings (H1/H2), campaign headlines, collection titles, editorial statements, short brand-story moments, selected product titles and short pull quotes.</p>
+    <p><strong>Recommended weights:</strong> 500 Medium for most display headings; 600 SemiBold for shorter or compact headings; 400 Regular for softer editorial moments; 400 Italic or 500 Italic for selective emphasis. Use only the styles actually loaded.</p>
+    <p><strong>Why it stays primary:</strong> Its high-contrast, Garamond-influenced forms bring elegance, heritage and a fashion-editorial quality. The delicate hairlines and graceful proportions soften the strength of leather goods and balance MarviQ's masculine, contemporary product direction.</p>
+    <p><strong>Personality:</strong> Expressive, refined, crafted, timeless and distinctive. It should create the emotional first impression rather than carry every practical detail.</p>
+    <p class="note">Avoid long paragraphs, small navigation labels, prices, dense product specifications and fine print. At small sizes, its fine strokes can lose clarity, especially on lower-quality screens.</p>
+    <span class="pill">Primary / Display serif</span>
+   </div>
+   <div class="card">
+    <div class="kicker">Secondary typeface / Reading and interface</div>
+    <div style="font:400 clamp(1.25rem,2.5vw,1.8rem)/1.4 var(--font-interface);margin:8px 0 18px">Thoughtfully designed essentials for the everyday.</div>
+    <h3>ITC New Baskerville</h3>
+    <p><strong>Role:</strong> Secondary typeface and default reading/interface family. It supports the primary display face and carries the information customers need to understand and purchase products.</p>
+    <p><strong>Use for:</strong> Body paragraphs, brand-story supporting copy, product descriptions, material and craftsmanship explanations, product features, size and care information, navigation, buttons, prices, filters, forms, footer links, policies and other utility text.</p>
+    <p><strong>Recommended weights:</strong> 400 Regular for standard reading text. Use 400 Italic selectively for quotations or short editorial emphasis. Use 500 Medium or 600 SemiBold only if those exact styles are included in the licensed font files; do not rely on browser-synthesised bold. If the licensed family has only Regular and Italic, create hierarchy through size, spacing, colour and layout instead.</p>
+    <p><strong>Why this secondary face:</strong> ITC New Baskerville is a classic transitional serif with a composed, structured and literary character. It reinforces MarviQ's crafted, enduring positioning and gives supporting copy a more considered editorial feel than a neutral geometric sans serif. Its role is to communicate with calm authority, not compete with Cormorant's larger display moments.</p>
+    <p><strong>Personality:</strong> Composed, articulate, trustworthy, established and quietly sophisticated. It makes product information feel considered and connected to the brand world.</p>
+    <p class="note">Because this is a serif-on-serif pairing, test real product pages carefully. Avoid very small, very light or tightly tracked Baskerville text. If a specific interface element becomes difficult to scan, first improve size, contrast and spacing; do not add a third typeface without a deliberate system revision.</p>
+    <span class="pill">Secondary / Text serif</span>
+   </div>
+  </div>
+  <div class="card" style="margin-top:24px">
+   <h3>The typographic philosophy</h3>
+   <p><strong>Modern Heritage Through Editorial Typography.</strong> MarviQ should feel like a contemporary men's leather-goods label with a lasting point of view—not a generic ecommerce template. Keeping Cormorant Garamond as the primary face preserves the expressive, fashion-led identity already established. Replacing DM Sans with ITC New Baskerville shifts the supporting voice toward a more literary, heritage-informed character and creates continuity between headlines, storytelling and product descriptions.</p>
+   <p><strong>Two different jobs, one visual language:</strong> Cormorant Garamond is the voice of expression—it attracts attention, sets mood and creates memorable brand moments. ITC New Baskerville is the voice of explanation—it carries stories, product information and the practical details that support a confident purchase.</p>
+   <p><strong>How to maintain hierarchy:</strong> Since both families are serif typefaces, do not depend on the font-family change alone to distinguish content levels. Build contrast through scale, weight where licensed, line-height, paragraph width, whitespace, alignment and consistent placement. Keep display headings relatively large and concise; keep supporting text quieter and comfortably readable.</p>
+  </div>
+  <div class="card" style="margin-top:24px">
+   <h3>Website type hierarchy</h3>
+   <p class="note">Suggested starting sizes for responsive design. These are design recommendations, not fixed rules; validate them with actual product names, descriptions and mobile layouts.</p>
+   <table>
+    <thead><tr><th>Element</th><th>Typeface / weight</th><th>Suggested size</th><th>Recommended treatment</th></tr></thead>
+    <tbody>
+     <tr><td>Hero headline (H1)</td><td>Cormorant Garamond 500</td><td>64–88 px desktop / 46–60 px mobile</td><td>Line-height 0.95–1.05; concise wording; controlled negative tracking.</td></tr>
+     <tr><td>Section heading (H2)</td><td>Cormorant Garamond 500</td><td>44–60 px desktop / 36–44 px mobile</td><td>Line-height 1.0–1.08; sentence case; generous surrounding space.</td></tr>
+     <tr><td>Card / product title (H3)</td><td>Cormorant Garamond 600</td><td>24–30 px desktop / 22–26 px mobile</td><td>Keep titles concise; let product imagery remain prominent.</td></tr>
+     <tr><td>Editorial statement / pull quote</td><td>Cormorant Garamond 400 or 400 Italic</td><td>24–32 px desktop / 20–26 px mobile</td><td>Use selectively; short statements only; avoid long blocks in display styling.</td></tr>
+     <tr><td>Body copy</td><td>ITC New Baskerville 400</td><td>16–18 px desktop / 15–17 px mobile</td><td>Line-height 1.6–1.75; paragraph measure around 55–75 characters.</td></tr>
+     <tr><td>Product description</td><td>ITC New Baskerville 400</td><td>14–16 px desktop / 14–15 px mobile</td><td>Line-height 1.5–1.7; break long copy into short paragraphs.</td></tr>
+     <tr><td>Product specifications / material details</td><td>ITC New Baskerville 400</td><td>14–15 px desktop / 13–14 px mobile</td><td>Use clear labels, grouped information and adequate row spacing; do not reduce essential details excessively.</td></tr>
+     <tr><td>Navigation</td><td>ITC New Baskerville 400 or licensed 500</td><td>13–15 px desktop / 13–14 px mobile</td><td>Use restrained tracking and clear spacing between links; avoid tiny uppercase navigation.</td></tr>
+     <tr><td>Buttons</td><td>ITC New Baskerville 400 or licensed 500</td><td>13–15 px desktop / 13–14 px mobile</td><td>Use concise labels, sufficient padding and strong contrast; avoid synthetic bold.</td></tr>
+     <tr><td>Price</td><td>ITC New Baskerville 400 or licensed 500</td><td>15–17 px desktop / 14–16 px mobile</td><td>Keep price easy to locate and compare; use layout and spacing for emphasis.</td></tr>
+     <tr><td>Eyebrow / metadata</td><td>ITC New Baskerville 400</td><td>12–13 px desktop / 11–12 px mobile</td><td>Use sparingly; short labels only. Prefer readable size over excessive letter spacing.</td></tr>
+     <tr><td>Footer / policy / utility copy</td><td>ITC New Baskerville 400</td><td>14–16 px desktop / 14–15 px mobile</td><td>Maintain comfortable line-height and sufficient contrast, especially for important links.</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="grid2" style="margin-top:24px">
+   <div class="card">
+    <h3>Typesetting and consistency rules</h3>
+    <ul style="padding-left:19px;margin:12px 0 0">
+     <li style="margin-bottom:8px">Use Cormorant Garamond for short, high-impact display moments—not for every text element.</li>
+     <li style="margin-bottom:8px">Use ITC New Baskerville for supporting copy and the functional shopping experience, including product information and interface labels.</li>
+     <li style="margin-bottom:8px">Use sentence case for most headings and sentences. Reserve all caps for very short labels only.</li>
+     <li style="margin-bottom:8px">Keep paragraph width around 55–75 characters per line where practical to support comfortable reading.</li>
+     <li style="margin-bottom:8px">Use body line-height around 1.6–1.75; use approximately 1.5–1.7 for compact product copy and specifications.</li>
+     <li style="margin-bottom:8px">Avoid excessive letter spacing on Baskerville body text. Use tracking mainly for short uppercase labels, and keep it subtle.</li>
+     <li style="margin-bottom:8px">Create hierarchy with size, whitespace, line-height and alignment before adding more font weights.</li>
+     <li>Keep text colour high-contrast: prefer Carbon Black or Deep Forest on Natural Ivory, and Ivory on Deep Forest or Carbon Black.</li>
+    </ul>
+   </div>
+   <div class="card">
+    <h3>Pairing rules and practical cautions</h3>
+    <p>Keep the production website to these two type families. Cormorant Garamond carries the expressive brand personality; ITC New Baskerville carries the reading and information layer. The result should feel like one coherent editorial system, not two competing headline fonts.</p>
+    <p>Do not use ITC New Baskerville as an oversized display face on every section. Do not use Cormorant for dense product copy, technical details or small controls. Avoid setting both families at similar sizes and weights in adjacent elements, as this weakens the hierarchy.</p>
+    <p>Check especially the product detail page, where customers must scan product name, price, material, dimensions, care instructions and purchase controls quickly. If the secondary face feels too delicate at a given size, increase its size or weight (only where licensed), improve contrast and spacing, and test again.</p>
+   </div>
+  </div>
+  <div class="card" style="margin-top:24px;background:#f4f1e9">
+   <h3>Web implementation, loading and licensing</h3>
+   <p><strong>Cormorant Garamond:</strong> The primary family is available through Google Fonts and is loaded by this prototype. Keep only the weights and italic styles used in the final design to reduce font requests and file weight.</p>
+   <p><strong>ITC New Baskerville:</strong> Do not assume this commercial typeface is available through Google Fonts. Obtain the webfont files (preferably WOFF2) from the foundry or an authorised font provider and confirm that the licence explicitly covers commercial website use, the intended domain(s), traffic/page-view limits if any, and the required number of domains or seats. Do not upload desktop font files as webfonts unless the licence permits it.</p>
+   <p><strong>Fallback stack:</strong> The CSS uses ITC New Baskerville first, followed by locally available Baskerville and Times New Roman, then a generic serif. These fallbacks are practical substitutes, not exact visual matches. Check line wrapping and spacing when the licensed webfont has not loaded.</p>
+   <p><strong>Performance:</strong> Serve WOFF2 where possible, load only necessary styles, use font-display: swap or an intentionally tested equivalent, and consider preloading only the most important above-the-fold font file. Avoid loading many weights that are not used. Test cumulative layout shift, text wrapping, page speed and rendering on real desktop and mobile devices.</p>
+   <p><strong>Quality assurance:</strong> Review the homepage hero, navigation, product listing cards, product detail page, cart/checkout, footer and long-form policy pages. Test at narrow mobile widths and with the webfont disabled to ensure fallback text remains usable. Confirm all text remains legible at normal zoom and under different display conditions.</p>
+   <p class="note">Implementation note: the HTML prototype defines ITC New Baskerville as the secondary family with Baskerville/Times New Roman fallbacks. The actual licensed ITC New Baskerville webfont must be supplied by the site owner/developer; it is intentionally not fetched from Google Fonts.</p>
+  </div>
+ </div>
+</section>
+
+<section id="application">
+ <div class="wrap">
+  <div class="kicker">11 / Brand applications</div><h2>One identity.<br>Many expressions.</h2>
+  <div class="grid2">
+   <div class="card application">
+    <div class="sample" style="background:#F1EDE3;color:#20221F"><div class="mock-logo">MARVIQ</div></div>
+    <div class="copy"><h3>Logo identity</h3><p>Keep the primary wordmark clean and distinctive. Use Carbon Black or Deep Forest on light backgrounds, and Natural Ivory on dark backgrounds. Prioritize monochrome versions for versatility.</p></div>
+   </div>
+   <div class="card application">
+    <div class="sample" style="background:#294137;color:#F1EDE3;flex-direction:column;gap:15px"><div class="mock-logo">MARVIQ</div><div style="font:italic 1.1rem Georgia,serif">Crafted for What Matters.</div></div>
+    <div class="copy"><h3>Website &amp; ecommerce</h3><p>Use Ivory for primary backgrounds, Carbon Black for text, Deep Forest for primary calls to action, and restrained Cognac or Brass accents. Let product photography lead.</p></div>
+   </div>
+   <div class="card application">
+    <div class="sample" style="background:#294137;color:#F1EDE3"><div style="border:1px solid #9B8055;padding:26px 34px;text-align:center"><div class="mock-logo" style="font-size:1.5rem">MARVIQ</div><div style="font-size:.6rem;letter-spacing:.2em;margin-top:12px">CRAFTED FOR WHAT MATTERS</div></div></div>
+    <div class="copy"><h3>Packaging</h3><p>Deep Forest outer packaging, Ivory tissue or interior, and restrained Brass finishing can create a considered unboxing experience.</p></div>
+   </div>
+   <div class="card application">
+    <div class="sample" style="background:#A66F4F;color:#20221F"><div style="border:1px solid rgba(32,34,31,.5);padding:25px 34px"><div class="mock-logo" style="font-size:1.5rem">MARVIQ</div></div></div>
+    <div class="copy"><h3>Leather &amp; product marks</h3><p>Use blind embossing, debossing, engraving, or subtle hardware marks. Keep the product mark compact, legible, and uncomplicated at small sizes.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="logo">
+ <div class="wrap">
+  <div class="kicker">12 / Logo design direction</div><h2>Distinctive by design.</h2>
+  <p class="lead" style="max-width:780px">The logo should communicate confidence, individuality, and lasting style. It must remain clear at small sizes and work across digital platforms and physical product applications.</p>
+  <div class="grid2" style="margin-top:28px">
+   <div class="card"><h3>Primary wordmark</h3><p>A distinctive MARVIQ wordmark with strong letterform character and excellent legibility.</p></div>
+   <div class="card"><h3>Secondary logo</h3><p>A simplified lockup for compact or alternate placements.</p></div>
+   <div class="card"><h3>Monogram / symbol</h3><p>An optional ownable symbol derived from the brand name or its philosophy—not a generic fashion emblem.</p></div>
+   <div class="card"><h3>Product mark</h3><p>A compact version suitable for labels, embossing, debossing, engraving, and hardware.</p></div>
+  </div>
+  <p style="margin-top:22px">The logo should work in monochrome and should not depend on gradients, shadows, or decorative effects. Explore original concepts rather than treating these directions as mandatory solutions.</p>
+ </div>
+</section>
+
+<section id="guidelines">
+ <div class="wrap">
+  <div class="kicker">13 / Usage principles</div><h2>Consistency creates recognition.</h2>
+  <div class="do-dont">
+   <div class="card"><div class="eyebrow">Do</div><h3>Use color with purpose.</h3><p>Keep Deep Forest as a signature, Ivory as breathing space, and Cognac as a material cue. Maintain clear contrast and a consistent hierarchy.</p></div>
+   <div class="card"><div class="eyebrow">Avoid</div><h3>Making every element compete.</h3><p>Don't use all six colors equally, overuse metallic accents, or make every section dark. Reserve high contrast for what matters most.</p></div>
+   <div class="card"><div class="eyebrow">Do</div><h3>Design for real materials.</h3><p>Test marks on different leather colors, textures, grain directions, packaging stocks, and hardware finishes.</p></div>
+   <div class="card"><div class="eyebrow">Avoid</div><h3>Relying on screen color alone.</h3><p>HEX values are digital references. Print, foil, leather dye, and metal finishes require physical proofing and material-specific adjustments.</p></div>
+  </div>
+  <div class="card" style="margin-top:22px">
+   <h3>Accessibility and contrast</h3>
+   <p>Use Carbon Black or Deep Forest for important text on Natural Ivory. Do not use Antique Brass for small text on Ivory; its contrast is too low for comfortable reading. Check all interface text, buttons, and interactive states for adequate contrast before launch.</p>
+  </div>
+ </div>
+</section>
+
+<section id="deliverables">
+ <div class="wrap">
+  <div class="kicker">14 / Identity project deliverables</div><h2>What the identity system should include.</h2>
+  <div class="grid2">
+   <div>
+    <p class="lead">A practical identity system should be complete enough to guide consistent design as MarviQ grows.</p>
+   </div>
+   <div>
+    <ol style="padding-left:20px;margin:0">
+     <li>Primary logo and wordmark</li>
+     <li>Secondary logo and optional monogram or symbol</li>
+     <li>Light and dark logo variations</li>
+     <li>Final color palette with HEX and print references</li>
+     <li>Primary and secondary typography recommendations</li>
+     <li>Typography hierarchy and usage guidelines</li>
+     <li>Logo clear-space and minimum-size rules</li>
+     <li>Correct and incorrect logo usage examples</li>
+     <li>SVG, PDF, and PNG logo files, where applicable</li>
+     <li>Concise brand identity guideline document</li>
+    </ol>
+   </div>
+  </div>
+  <p style="margin-top:28px">The identity should be tested across leather embossing and debossing, engraving, product labels, hardware, packaging, social media, and the website.</p>
+ </div>
+</section>
+
+
+<section id="summary">
+ <div class="wrap">
+  <div class="kicker">15 / MarviQ brand identity — at a glance</div>
+  <h2>One clear point of view.</h2>
+  <p class="lead" style="max-width:850px;margin:18px 0 30px">MarviQ is a men's fashion and leather goods brand built around individuality, freedom of choice, thoughtful essentials and customer trust.</p>
+  <div class="grid2">
+   <div class="card"><div class="kicker">Brand positioning</div><h3>Modern men's essentials with a personal point of view.</h3><p>Distinctive, thoughtfully designed pieces for men with different identities, lifestyles and ambitions.</p></div>
+   <div class="card"><div class="kicker">Brand philosophy</div><h3>Individuality. Freedom. Confidence.</h3><p>The things you carry should connect with who you are, how you live and what you stand for—not simply look good.</p></div>
+   <div class="card"><div class="kicker">Brand promise</div><h3>Your trust comes first.</h3><p>Set honest expectations, respect the customer's choice, and deliver an experience that aims to meet what was shown and promised.</p></div>
+   <div class="card"><div class="kicker">Brand personality</div><h3>Bold, refined, masculine, individual, timeless and trustworthy.</h3><p>Confident without aggression; premium without pretension; distinctive without unnecessary decoration.</p></div>
+  </div>
+  <div class="card" style="margin-top:22px">
+   <div class="kicker">Visual identity system</div>
+   <h3>Modern Heritage with Contemporary Masculinity</h3>
+   <p><strong>Color palette:</strong> Deep Forest #294137 (signature); Natural Ivory #F1EDE3 (primary light); Carbon Black #20221F (text and contrast); Saddle Cognac #A66F4F (leather accent); Weathered Stone #A59C8E (supporting neutral); Antique Brass #9B8055 (fine detail).</p>
+   <p><strong>Website typography:</strong> Cormorant Garamond (primary display and editorial headings) paired with DM Sans (secondary body copy and interface). This typography recommendation is for the website, not the logo.</p>
+   <p><strong>Design principles:</strong> Strong hierarchy, generous negative space, natural material references, tactile product photography, restrained accents, readable interfaces and consistent color roles.</p>
+   <p><strong>Customer experience:</strong> Clear product information, realistic product presentation, dependable quality, and customer-first communication.</p>
+  </div>
+  <div class="quote" style="margin-top:30px">MarviQ — Crafted for What Matters.</div>
+ </div>
 </section>
 </main>
 
-<footer>
- <div class="footer-top">
-  <div class="footer-brand"><div class="wordmark">MARVIQ</div><p>Crafted for What Matters.</p></div>
-  <div class="footer-col"><h4>Explore</h4><a href="#collections">All essentials</a><a href="#story">Our story</a><a href="#values">Our philosophy</a></div>
-  <div class="footer-col"><h4>Customer care</h4><a href="#newsletter">Contact</a><a href="#newsletter">Shipping & returns</a><a href="#newsletter">FAQs</a></div>
-  <div class="footer-col"><h4>Follow along</h4><a href="#newsletter">Instagram ↗</a><a href="#newsletter">Facebook ↗</a><a href="#newsletter">TikTok ↗</a></div>
+<footer class="footer">
+ <div class="wrap">
+  <div class="eyebrow">MarviQ · Brand identity &amp; visual direction</div>
+  <div class="footer-title">Crafted for What Matters.</div>
+  <p style="max-width:620px;color:#c8c9c1">A living direction for a brand built around personal choice, thoughtful essentials, and individual style.</p>
+   <div style="margin-top:24px;font-size:.72rem;line-height:1.9;color:#b7b8af">
+    <strong style="color:#F1EDE3">Typography and accessibility references</strong><br>
+    <a href="https://design.google/library/choosing-web-fonts-beginners-guide" target="_blank" rel="noopener" style="color:#d9d0c0">Google Design — How to Choose a Web Font</a> ·
+    <a href="https://github.com/google/fonts/tree/main/ofl/dmsans" target="_blank" rel="noopener" style="color:#d9d0c0">Google Fonts — DM Sans</a> ·
+    <a href="https://github.com/CatharsisFonts/Cormorant" target="_blank" rel="noopener" style="color:#d9d0c0">Cormorant Typeface Project</a> ·
+    <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum" target="_blank" rel="noopener" style="color:#d9d0c0">W3C — WCAG Contrast Minimum</a>
+   </div>
+  <div style="margin-top:36px;border-top:1px solid rgba(241,237,227,.2);padding-top:18px;font-size:.72rem;color:#b7b8af;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+   <span>MARVIQ</span><span>Brand direction document · Version 1.0</span>
+  </div>
  </div>
- <div class="footer-bottom"><span>© 2026 MarviQ. All rights reserved.</span><span>Visual ecommerce concept · Not a live store</span><span>Bangladesh</span></div>
 </footer>
-
-<div class="drawer-backdrop" onclick="closeCart()"></div>
-<aside class="drawer" aria-label="Shopping bag">
- <div class="drawer-head"><h3>Your bag <span id="drawerCount">(0)</span></h3><button class="close-drawer" onclick="closeCart()" aria-label="Close bag">×</button></div>
- <div class="cart-items" id="cartItems"><p style="font-size:12px;color:var(--muted)">Your bag is currently empty.</p></div>
- <div class="cart-total"><strong>Subtotal</strong><strong id="cartTotal">৳ 0</strong></div>
- <button class="button" onclick="showToast('Demo only — checkout is not connected.')">Continue to checkout ↗</button>
- <div class="checkout-note">Shipping and taxes calculated at checkout.</div>
-</aside>
-<div class="toast" id="toast" role="status"></div>
-
-<script>
-const cart=[];
-const money=n=>'৳ '+n.toLocaleString('en-BD');
-function addToCart(name,price,image){
- const existing=cart.find(x=>x.name===name);
- if(existing) existing.qty++; else cart.push({name,price,image,qty:1});
- renderCart();showToast(name+' added to your bag.');
-}
-function renderCart(){
- const count=cart.reduce((n,x)=>n+x.qty,0);
- document.getElementById('bagCount').textContent=count;
- document.getElementById('drawerCount').textContent='('+count+')';
- document.getElementById('cartTotal').textContent=money(cart.reduce((n,x)=>n+x.price*x.qty,0));
- const target=document.getElementById('cartItems');
- if(!cart.length){target.innerHTML='<p style="font-size:12px;color:var(--muted)">Your bag is currently empty.</p>';return;}
- target.innerHTML=cart.map((x,i)=>`<div class="cart-item"><img src="${x.image}" alt=""><div><strong>${x.name}</strong><small>${money(x.price)} · Qty ${x.qty}</small><button class="remove" onclick="removeItem(${i})">Remove</button></div></div>`).join('');
-}
-function removeItem(i){cart.splice(i,1);renderCart()}
-function openCart(){document.body.classList.add('drawer-open')}
-function closeCart(){document.body.classList.remove('drawer-open')}
-function showToast(message){const t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),2300)}
-document.getElementById('newsForm').addEventListener('submit',e=>{
- e.preventDefault();const email=document.getElementById('emailInput').value;
- document.getElementById('formMessage').textContent='Thank you. This demo form is not connected to a mailing list.';
- e.target.reset();
-});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});
-</script>
 </body>
 </html>
